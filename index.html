@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shafiya ❤️ Giri</title>
+
+<style>
+body {
+  margin:0;
+  padding:0;
+  background: radial-gradient(circle at top, #1a001a, #000000);
+  color:white;
+  font-family:'Segoe UI', sans-serif;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+h1 {
+  margin-top:60px;
+  font-size:48px;
+  color:#ff66b2;
+  text-shadow:0 0 25px #ff1a75;
+}
+
+.subtitle {
+  font-size:24px;
+  color:#ffb3d9;
+  margin-bottom:40px;
+}
+
+p {
+  max-width:800px;
+  margin:20px auto;
+  font-size:20px;
+  line-height:1.8;
+}
+
+button {
+  padding:12px 30px;
+  font-size:18px;
+  background:#ff4da6;
+  border:none;
+  color:white;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover {
+  background:#ff1a75;
+}
+
+.hidden {
+  display:none;
+  margin-top:40px;
+  font-size:22px;
+  white-space:pre-line;
+  color:#ffb3d9;
+}
+
+.heart {
+  position:fixed;
+  bottom:-10px;
+  color:#ff4da6;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float {
+  0% {transform:translateY(0) scale(1); opacity:1;}
+  100% {transform:translateY(-100vh) scale(1.6); opacity:0;}
+}
+
+.footer {
+  margin-top:60px;
+  font-size:14px;
+  color:grey;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Shafiya ❤️ Giri</h1>
+<div class="subtitle">Our Story — From Comments to Forever</div>
+
+<p>
+We met in the most unexpected place —
+a comment section.
+
+On 2 January,
+something small started.
+A simple reply.
+A random conversation.
+But slowly…
+it became my safe place.
+</p>
+
+<p>
+You didn’t rush me.
+You didn’t force anything.
+You stayed.
+
+You healed wounds
+you never caused.
+You loved me gently
+when I didn’t know how to be loved.
+</p>
+
+<p>
+Bangalore and Vizag —
+different cities,
+different lives,
+different worlds.
+
+Yet somehow,
+one heartbeat.
+</p>
+
+<p>
+Days turned into comfort.
+Comfort turned into attachment.
+Attachment turned into something deeper.
+
+Something real.
+</p>
+
+<button onclick="showMessage()">Click If You Believe In Us ❤️</button>
+
+<div id="message" class="hidden">
+
+Today, you proposed.
+
+And in that moment,
+every fear I had,
+every doubt,
+every past pain —
+
+felt lighter.
+
+You became my first love.
+Not just first in time,
+but first in depth.
+
+Maybe life won’t give us marriage.
+Maybe the world won’t understand.
+
+But I will always know
+that you were the one
+who changed my life.
+
+From 2 January
+to 13 February —
+
+from strangers
+to something unforgettable.
+
+Some loves don’t need a wedding
+to be forever.
+
+You are my once-in-a-lifetime.
+
+Forever in my heart.
+💍❤️
+
+</div>
+
+<div class="footer">
+2 January — We met  
+13 February — You proposed  
+Our forever — Still unfolding
+</div>
+
+<script>
+function showMessage(){
+  document.getElementById("message").style.display="block";
+}
+
+function createHeart(){
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML="❤";
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.fontSize=(Math.random()*20+15)+"px";
+  document.body.appendChild(heart);
+  setTimeout(()=>{heart.remove();},6000);
+}
+setInterval(createHeart,300);
+</script>
+
+</body>
+</html>
